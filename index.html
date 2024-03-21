@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19" rel="stylesheet">
+
+    <style>
+    img {
+         width: 60px;
+         height: auto;
+         margin-top: 7px;
+    }
+    </style>
+
+    <title>Lidia's Portfolio</title>
+</head>
+<body>
+   <div class="container">
+
+      <nav id="header">
+        <div class="nav-logo">
+            <a href="#home"><img src="images/favicon.png" alt=""></a>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About & Skills</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#education" class="nav-link">Education</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle" class="toggle-checkbox">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-inner"></span>
+                <span class="toggle-switch"></span>
+            </label>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-chart-pie-alt" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+    <main class="wrapper">
+
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Lidia Aprilia Putri</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>
+                    With an interest in Technology and Business, 
+                    I want to become a Data Analyst in the future. 
+                    Hopefully I will be consistent with my dream.
+                </p>
+            </div>
+            <div class="social_icons">
+                <p>Don't hesitate to reach me through: </p>
+                <a href="https://www.instagram.com/this.islidd" target="_blank" class="home__social-link">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="https://github.com/Lidiaaprilia" target="_blank" class="home__social-link">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="images/lidia.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-scroll"></i>
+                <p>Scroll Here</p>
+            </a>
+          </div>
+
+       </section>
+
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>Hello fellas !!</p>
+                    <p>Before you scroll down, lemme to introduce who I am.</p>
+                    <p> 
+                        I am Lidia Aprilia Putri, a student pursuing a S.Kom degree in
+                        Information System at the Faculty of Engineering, 
+                        Mulawarman University in Samarinda since 2022. I was born 
+                        on April 28th 2004, and I'm very enthusiastic in learning
+                        the world of information technology. 
+                    </p>  
+                    <p>
+                        The reason I chose Information System is because I believe
+                        that Information System has a crucial role in facing the challenges
+                        of the modern world. The ability to be fluent in English
+                        is also a skill I'm developing, as many important journals and
+                        information are available in this language.
+                    </p>
+                    <p> I'm excited to expand my knowledge and take part in positive
+                        change through the world of information technology. 
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                  <div class="skills-header">
+                    <h3>Data Analyst</h3>
+                  </div>
+                  <div class="skills-list">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                      <div class="skill-value" data-skill-level="80"></div>
+                    </div>
+                    <span>Excel</span>
+                    <div class="skill-bar">
+                      <div class="skill-value" data-skill-level="70"></div>
+                    </div>
+                    <span>SQL</span>
+                    <div class="skill-bar">
+                      <div class="skill-value" data-skill-level="80"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+          </div>
+       </section>
+
+       <section class="section" id="education">
+          <div class="top-header">
+              <h1>Education</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-backpack"></i>
+                <h3>SMP Negeri 4 Samarinda</h3>
+                <label>From 2016 until 2019.</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-bell-school"></i>
+                <h3>SMA Negeri 3 Samarinda</h3>
+                <label>From 2019 until 2022</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-university"></i>
+                <h3>Mulawarman University</h3>
+                <label>Faculty of Engineering</label>
+                <label>Information System</label>
+                <label>From 2022 until present</label>
+            </div>
+          </div>
+       </section>
+    </main>
+
+    <footer>
+        <div class="top-footer">
+            <p>Lidia Aprilia Putri</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About & Skills</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#education">Education</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.instagram.com/this.islidd" target="_blank" class="home__social-link">
+                <i class="uil uil-instagram"></i>
+            </a>
+            <a href="https://github.com/Lidiaaprilia" target="_blank" class="home__social-link">
+                <i class="uil uil-github-alt"></i>
+            </a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; Lidia Aprilia Putri - 2024 - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>

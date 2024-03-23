@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!------------------------------------------------ICONS (UNICONS)------------------------------------------------------->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
+    <!----------------------------------------------------CSS--------------------------------------------------------------->
     <link rel="stylesheet" href="style.css">
 
+    <!-------------------------------------------------PROFILE ICON--------------------------------------------------------->
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19" rel="stylesheet">
-
+    <!-----------------------------------------------PHOTO PROFILE STYLE---------------------------------------------------->
     <style>
     img {
          width: 60px;
@@ -24,7 +26,7 @@
 </head>
 <body>
    <div class="container">
-
+    <!----------------------------------------------------HEADER------------------------------------------------------------>
       <nav id="header">
         <div class="nav-logo">
             <a href="#home"><img src="images/favicon.png" alt=""></a>
@@ -36,22 +38,30 @@
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
-                    <a href="#about" class="nav-link">About & Skills</a>
+                    <a href="#about" class="nav-link">About</a>
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
                     <a href="#education" class="nav-link">Education</a>
                     <div class="circle"></div>
                 </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
             </ul>
         </div>
+        <!--------------------------------------------------DARK MODE------------------------------------------------------->
         <div class="dark-mode-toggle">
-            <input type="checkbox" id="darkModeToggle" class="toggle-checkbox">
-            <label for="darkModeToggle" class="toggle-label">
-                <span class="toggle-inner"></span>
+            <a href="#" id="darkModeToggle" class="toggle-link">
+                <span class="toggle-inner">
+                    <img src="images/moon.png" class="moon-icon" alt="Moon Icon">
+                    <img src="images/sun.png" class="sun-icon" alt="Sun Icon">
+                </span>
                 <span class="toggle-switch"></span>
-            </label>
+            </a>
         </div>
+        <!----------------------------------------NAVIGATION BAR (MOBILE)--------------------------------------------------->
         <div class="nav-menu-btn">
             <i class="uil uil-chart-pie-alt" onclick="myMenuFunction()"></i>
         </div>
@@ -59,6 +69,7 @@
 
     <main class="wrapper">
 
+        <!-----------------------------------------------FEATURED BOX------------------------------------------------------->
        <section class="featured-box" id="home">
           <div class="featured-text">
             <div class="featured-text-card">
@@ -95,9 +106,9 @@
                 <p>Scroll Here</p>
             </a>
           </div>
-
        </section>
 
+       <!---------------------------------------------------ABOUT BOX------------------------------------------------------->
        <section class="section" id="about">
           <div class="top-header">
             <h1>About Me</h1>
@@ -127,6 +138,7 @@
                     </p>
                 </div>
             </div>
+            <!---------------------------------------------SKILL BOX-------------------------------------------------------->
             <div class="col">
                 <div class="skills-box">
                   <div class="skills-header">
@@ -151,6 +163,7 @@
           </div>
        </section>
 
+       <!-----------------------------------------------------EDUCATION BOX------------------------------------------------->
        <section class="section" id="education">
           <div class="top-header">
               <h1>Education</h1>
@@ -175,8 +188,43 @@
             </div>
           </div>
        </section>
+
+       <!--------------------------------------------------CONTACT BOX------------------------------------------------------>
+       <section class="section" id="contact">
+        <div class="top-header">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="row">
+           <div class="col">
+              <div class="contact-info">
+                  <h2>Get In Touch</h2>
+                  <p><img src="images/love-letter.png" alt="">aprilia.lidia28@gmail.com</p>
+              </div>
+           </div>
+           <div class="col">
+              <div class="form-control">
+                  <div class="form-inputs">
+                      <input type="text" class="input-field" placeholder="Name" id="name">
+                      <input type="text" class="input-field" placeholder="Email" id="email">
+                  </div>
+                  <div class="text-area">
+                      <textarea placeholder="Message" id="msg"></textarea>
+                  </div>
+                  <div class="form-button">
+                      <button class="btn" onclick="sendMessage()">Send<i class="uil uil-message"></i></button>
+                  </div>
+                  <div class="message">
+                    <div class="success" id="success">Your Message Successfully Sent!</div>
+                    <div class="danger" id="danger">Fields Can't be Empty!</div>
+                </div>
+              </div>
+           </div>
+        </div>
+     </section>    
+
     </main>
 
+    <!--------------------------------------------------------FOOTER------------------------------------------------------->
     <footer>
         <div class="top-footer">
             <p>Lidia Aprilia Putri</p>
@@ -187,10 +235,13 @@
                     <a href="#home">Home</a>
                 </li>
                 <li class="footer_menu_list">
-                    <a href="#about">About & Skills</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="footer_menu_list">
                     <a href="#education">Education</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact </a>
                 </li>
             </ul>
         </div>
@@ -206,13 +257,16 @@
             <p>Copyright &copy; Lidia Aprilia Putri - 2024 - All rights reserved</p>
         </div>
     </footer>
-
     </div>
 
+    <!--------------------------------------------------TYPING JS----------------------------------------------------------->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+    <!-----------------------------------------------SCROLL REVEAL JS------------------------------------------------------->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-----------------------------------------------------MAIN JS---------------------------------------------------------->
     <script src="main.js"></script>
+    
 </body>
 </html>
